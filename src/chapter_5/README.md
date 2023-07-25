@@ -1,0 +1,3 @@
+# Hardware Design of Smart Light Products based on ESP32-C3
+
+In this chapter, we will first introduce the main components of smart light products and their application scenarios, and take LED smart lights as an example to demonstrate their major hardware blocks. Then, we will use ESP32-C3 chips and modules to design a smart light product capable of dimming, colour changing, and wireless communication. The design provided in this chapter can also be extended and applied to various LED products such as light strips, ceiling lights, spotlights, etc.

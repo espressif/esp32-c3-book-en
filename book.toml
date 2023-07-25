@@ -1,0 +1,11 @@
+[book]
+title        = "ESP32-C3 Wireless Adventure"
+authors      = ["Espressif Systems"]
+description  = "A comprehensive guide to IoT"
+multilingual = false
+language     = "en"
+src = "src"
+
+[output.html]
+git-repository-url = "https://github.com/esp-rs/book"
+mathjax-support = true

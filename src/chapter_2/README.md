@@ -1,0 +1,7 @@
+# Introduction and Practice of IoT Projects
+
+In Chapter 1, we introduced the architecture of IoT, and the roles and interrelationships of the perception & control layer, network layer, platform layer, and application layer, as well as the development of smart home. However, just like when we learn to paint, knowing the theoretical knowledge is far from enough. We have to “get our hands dirty” to put IoT projects into practice in order to truly master the technology. In addition, when a project moves to the mass production stage, it is necessary to consider more factors such as network connection, configuration, IoT cloud platform interaction, firmware management and updates, mass production management, and security configuration.
+
+So, what do we need to pay attention to when developing a complete IoT project?
+
+In Chapter 1, we mentioned that smart home is one of the most common IoT application scenarios, and smart lights are one of the most basic and practical appliances, which can be used in homes, hotels, gyms, hospitals, etc. Therefore, in this book, we will take the construction of a smart light project as the starting point, explain its components and features, and provide guidance on project development. We hope that you can draw inferences from this case to create more IoT applications.

@@ -1,0 +1,1 @@
+![Part 2](Pics/Starting/3c.jpg)
