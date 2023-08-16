@@ -25,7 +25,7 @@ cargo install mdbook
 Then you can clone the respository and start a development server by running:
 
 ```shell
-git clone xxxxxxxxxx (📌 The link is to be updated when it is released on github.)
+git clone https://github.com/espressif/esp32-c3-book-en
 cd ~/esp32-c3-book-en
 mdbook serve
 ```
