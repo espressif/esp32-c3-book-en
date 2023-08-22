@@ -26,5 +26,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         if: ${{ github.ref == 'refs/heads/main' }}
         with:
-          github_token: ${{ secrets.TEST_TOKEN }}
+          github_token: ${{ secrets.TEST_TOKEN1 }}
           publish_dir: ./book
