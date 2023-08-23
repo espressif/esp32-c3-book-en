@@ -5,3 +5,5 @@
 If you are an engineer in related fields, a software architect, a teacher, a student, or anyone who has an interest in IoT, this book is for you.
 
 You may download the code example used in this book from Espressif’s site on GitHub. For latest information on IoT development, please follow our official account.
+
+![ESP32-C3](../src/Pics/readme-cover.jpg)
