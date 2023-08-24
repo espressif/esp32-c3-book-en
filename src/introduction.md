@@ -1,6 +1,6 @@
 
 <p style="text-align:center;">
-<img src="../Pics/esp-logo-black.svg" width="50%">
+<img src="Pics/esp-logo-black.svg" width="50%">
 </p>
 
 # Introduction
@@ -12,4 +12,4 @@ If you are an engineer in related fields, a software architect, a teacher, a stu
 You may download the code example used in this book from Espressif’s site on GitHub. For latest information on IoT development, please follow our official account.
 
 
-<img src="../Pics/readme-cover.jpg">
+<img src="Pics/readme-cover.jpg">
