@@ -7,6 +7,6 @@ language     = "en"
 src = "src"
 
 [output.html]
-git-repository-url = "https://github.com/esp-rs/book"
+git-repository-url = "https://github.com/espressif/esp32-c3-book-en/"
 mathjax-support = true
 edit-url-template = "https://github.com/espressif/esp32-c3-book-en/blob/main/WRITINGS.md"
