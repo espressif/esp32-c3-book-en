@@ -2124,7 +2124,7 @@ It takes similar steps to develop a controller driver: know about the controller
 <div style="break-before: page; page-break-before: always;"></div><h1 id="esp32-c3-peripheral-applications"><a class="header" href="#esp32-c3-peripheral-applications">ESP32-C3 Peripheral Applications</a></h1>
 <p>The ESP32-C3 chip has rich peripheral interfaces, as shown in Figure 6.1. In this section, we will introduce the application scenarios of ESP32-C3 peripheral interfaces in terms of the perception &amp; control layer.</p>
 <figure align="center">
-    <img src="chapter_6/../Pics/D6Z/6-1.png" width="100%">
+    <img src="chapter_6/../Pics/D6Z/6-1.jpg" width="100%">
     <figcaption>Figure 6.1. Peripheral applications of ESP32-C3</figcaption>
 </figure>
 <h3 id="human-machine-interface-hmi"><a class="header" href="#human-machine-interface-hmi">Human Machine Interface (HMI)</a></h3>
@@ -2211,20 +2211,20 @@ color.</p>
 Among the three LED dimming methods above, PWM dimming performs the best. It guarantees no color shifts and stability at low brightness and is therefore widely used.</p>
 <p>Figure 6.10 is the block diagram of PWM dimming, which mainly includes on/off signal sampling circuit, the main control circuit and the PWM controller. The on/off signal sampling circuit generates a clock signal after detecting the on/off signal in the circuit. The main control circuit receives the clock signal and generates three pulse signals, which are respectively output to three PWM controllers. The PWM controllers output different current signals based on the pulse signals to adjust the brightness of corresponding LED bead. The main control circuit usually includes a microcontroller unit, whose input is connected to the on/off signal sampling circuit, and three outputs are respectively connected to three PWM controllers. The outputs of PWM controllers are connected to the red, green, and blue LED beads respectively, thereby controlling their brightness to get the expected color. All LED beads are packaged in one lampshade.</p>
 <figure align="center">
-    <img src="chapter_6/6.3/../../Pics/D6Z/6-10.png" width="80%">
+    <img src="chapter_6/6.3/../../Pics/D6Z/6-10.jpg" width="80%">
     <figcaption>Figure 6.10. Block diagram of PWM dimming</figcaption>
 </figure>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="introduction-to-pwm"><a class="header" href="#introduction-to-pwm">Introduction to PWM</a></h1>
 <p>Pulse width modulation (PWM) is a technique that converts analogue signals into pulse signals (a means of controlling analogue output with digital signals). It can be used to control the brightness of LEDs, the speed of DC motors, etc.</p>
 <p>It has three main parameters: frequency, period, and duty cycle. PWM frequency is the number of times the PWM signal goes from high level to low level and back to high level within one second. It is measured in Hz. PWM period is the reciprocal of PWM frequency. PWM duty cycle refers to the ratio of the high-level time to one PWM period, ranging from 0% to 100%. Figure 6.11 shows the PWM duty cycle.</p>
 <figure align="center">
-    <img src="chapter_6/6.3/../../Pics/D6Z/6-11.png" width="60%">
+    <img src="chapter_6/6.3/../../Pics/D6Z/6-11.jpg" width="60%">
     <figcaption>Figure 6.11. PWM duty cycle</figcaption>
 </figure>
 <p>For example, if the PWM period is 10 ms and the pulse width time is 8 ms, then the PWM duty cycle is 8/10=80%.</p>
 <p>When using PWM to control an LED, if the light is turned on for 1 second and then off for 1 second repeatedly (i.e., period = 2s, duty cycle = 50%), the LED will appear to blink. If this cycle is shortened to 200 ms, with the LED being on for 100 ms and then off for 100 ms, the LED will appear to blink at a higher frequency. Due to the persistence of vision, as the cycle continues decreasing, there will be a critical threshold where the human eye cannot perceive the blinking of the LED. At this point, the persistence of vision blends the on and off images, resulting in a stable average brightness. This average brightness is directly related to the PWM duty cycle, as shown in Figure 6.12. Therefore, we can dim LED lights by adjusting the PWM duty cycle.</p>
 <figure align="center">
-    <img src="chapter_6/6.3/../../Pics/D6Z/6-12.png" width="100%">
+    <img src="chapter_6/6.3/../../Pics/D6Z/6-12.jpg" width="100%">
     <figcaption>Figure 6.12. Relationship between PWM duty cycle and average brightness</figcaption>
 </figure>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="led-dimming-driver-development"><a class="header" href="#led-dimming-driver-development">LED Dimming Driver Development</a></h1>
@@ -2589,7 +2589,7 @@ IEEE 802.11, including the Open System Interconnection Reference Model
 framework. Their names and relationships are shown in Figure 7.1.</p>
 <!-- ![Architecture of OSI/RM](D7Z/7-1){width="80%"} -->
 <figure align="center">
-    <img src="chapter_7/7.1/../../Pics/D7Z/7-1.png" width="90%">
+    <img src="chapter_7/7.1/../../Pics/D7Z/7-1.jpg" width="90%">
     <figcaption>Figure 7.1. Architecture of OSI/RM</figcaption>
 </figure>
 <h2 id="physical-components-of-ieee-80211"><a class="header" href="#physical-components-of-ieee-80211">Physical components of IEEE 802.11</a></h2>
@@ -2597,7 +2597,7 @@ framework. Their names and relationships are shown in Figure 7.1.</p>
 shown in Figure 7.2.</p>
 <!-- ![Physical components of IEEE 802.11](D7Z/7-2){width="80%"} -->
 <figure align="center">
-    <img src="chapter_7/7.1/../../Pics/D7Z/7-2.png" width="80%">
+    <img src="chapter_7/7.1/../../Pics/D7Z/7-2.jpg" width="80%">
     <figcaption>Figure 7.2. Physical components of IEEE 802.11</figcaption>
 </figure>
 <ul>
@@ -2635,7 +2635,7 @@ building block of an IEEE 802.11 network is the Basic Service Set (BSS).
 It comes in two categories, the Independent BSS and the Infrastructure
 BSS, as shown in Figure 7.3.</p>
 <figure align="center">
-    <img src="chapter_7/7.1/../../Pics/D7Z/7-3.png" width="90%">
+    <img src="chapter_7/7.1/../../Pics/D7Z/7-3.jpg" width="90%">
     <figcaption>Figure 7.3. Independent BSS and infrastructure BSS</figcaption>
 </figure>
 <ul>
@@ -2669,7 +2669,7 @@ passive scanning, then establishes a connection with an AP after
 authentication and association, and finally accesses the wireless LAN.
 Figure 7.4 shows the process of Wi-Fi connection.</p>
 <figure align="center">
-    <img src="chapter_7/7.1/../../Pics/D7Z/7-4.png" width="60%">
+    <img src="chapter_7/7.1/../../Pics/D7Z/7-4.jpg" width="60%">
     <figcaption>Figure 7.4. Process of Wi-Fi connection</figcaption>
 </figure>
 <h2 id="1-scanning"><a class="header" href="#1-scanning">1. Scanning</a></h2>
@@ -2704,7 +2704,7 @@ and non-open authentication.</p>
 encryption. Any STA can access the network. The AP does not verify STA's
 identity in this process, as shown in Figure 7.5.</p>
 <figure align="center">
-    <img src="chapter_7/7.1/../../Pics/D7Z/7-5.png" width="60%">
+    <img src="chapter_7/7.1/../../Pics/D7Z/7-5.jpg" width="60%">
     <figcaption>Figure 7.5. Process of open authentication</figcaption>
 </figure>
 <p>The STA sends a request for authentication, and the AP returns the
@@ -2724,7 +2724,7 @@ when they have the same key configured. There are 64-bit keys and
 128-bit keys. Users can set up to four groups of different keys. Figure
 7.6 shows the process of shared key authentication.</p>
 <figure align="center">
-      <img src="chapter_7/7.1/../../Pics/D7Z/7-6.png" width="90%">
+      <img src="chapter_7/7.1/../../Pics/D7Z/7-6.jpg" width="90%">
       <figcaption>Figure 7.6. Process of shared key authentication</figcaption>
   </figure>
 <p>The STA sends an authentication request to the AP. Then the AP generates
@@ -2788,7 +2788,7 @@ mitigates the risks in WPA2 and provides new features. </p>
 <p>After the AP returns successful authentication result to the STA, the
 next step is association to get full network access, as shown in Figure 7.7.</p>
 <figure align="center">
-    <img src="chapter_7/7.1/../../Pics/D7Z/7-7.png" width="60%">
+    <img src="chapter_7/7.1/../../Pics/D7Z/7-7.jpg" width="60%">
     <figcaption>Figure 7.7. Process of association</figcaption>
 </figure>
 <h2 id="4-authorisation"><a class="header" href="#4-authorisation">4. Authorisation</a></h2>
@@ -2804,7 +2804,7 @@ through EAP over LAN (EAPOL), and get allowed to use the network once
 the verification succeeds. Figure 7.8 shows the architecture of EAP.</p>
 <p>This book only touches the basics about EAP. To learn more, please refer to RFC 3748.</p>
 <figure align="center">
-    <img src="chapter_7/7.1/../../Pics/D7Z/7-8.png" width="80%">
+    <img src="chapter_7/7.1/../../Pics/D7Z/7-8.jpg" width="80%">
     <figcaption>Figure 7.8. EAP architecture</figcaption>
 </figure>
 <ul>
@@ -2851,7 +2851,7 @@ namely the password set in the wireless router at home. It is set
 without any authentication server, and the corresponding setting is
 WPA/WPA2-PSK. Figure 7.9 shows how a PMK is generated from the PSK.</p>
 <figure align="center">
-    <img src="chapter_7/7.1/../../Pics/D7Z/7-9.png" width="70%">
+    <img src="chapter_7/7.1/../../Pics/D7Z/7-9.jpg" width="70%">
     <figcaption>Figure 7.9. Generation of PMK from PSK</figcaption>
 </figure>
 <p>In WPA2-PSK, PMK is identical with PSK. But in WPA3, it generates new
@@ -2859,7 +2859,7 @@ PMK through the SAE method based on the PMK from WPA2, to ensure that
 every STA has a unique PMK at different stages. Figure 7.10 shows how
 PMK is generated through SAE.</p>
 <figure align="center">
-    <img src="chapter_7/7.1/../../Pics/D7Z/7-10.png" width="40%">
+    <img src="chapter_7/7.1/../../Pics/D7Z/7-10.jpg" width="40%">
     <figcaption>Figure 7.10. Generation of PMK with SAE</figcaption>
 </figure>
 <p>SAE treats the Supplicant and the Authenticator as peers. Either of them
@@ -3096,7 +3096,7 @@ occupy the same physical channel, which means the devices are
 synchronised according to a common clock and frequency hopping sequence.
 Figure 7.13 shows the piconet topology.</p>
 <figure align="center">
-    <img src="chapter_7/7.2/../../Pics/D7Z/7-13.png" width="60%">
+    <img src="chapter_7/7.2/../../Pics/D7Z/7-13.jpg" width="60%">
     <figcaption>Figure 7.13. Piconet topology</figcaption>
 </figure>
 <h3 id="scatternet"><a class="header" href="#scatternet">Scatternet</a></h3>
@@ -3107,7 +3107,7 @@ master of one piconet may act as the slave of another piconet at the
 same time. In Figure 7.14, the mobile phone is the master of the left
 piconet as well as the slave of the right piconet.</p>
 <figure align="center">
-    <img src="chapter_7/7.2/../../Pics/D7Z/7-14.png" width="80%">
+    <img src="chapter_7/7.2/../../Pics/D7Z/7-14.jpg" width="80%">
     <figcaption>Figure 7.14. Scatternet topology</figcaption>
 </figure>
 <h3 id="mesh"><a class="header" href="#mesh">Mesh</a></h3>
@@ -3132,7 +3132,7 @@ advertising packets at an interval of <em>t</em>. We call every advertising
 packet sent an &quot;advertising event&quot;, so <em>t</em> is also called the
 advertising event interval, as shown in Figure 7.15.</p>
 <figure align="center">
-    <img src="chapter_7/7.2/../../Pics/D7Z/7-15.png" width="90%">
+    <img src="chapter_7/7.2/../../Pics/D7Z/7-15.jpg" width="90%">
     <figcaption>Figure 7.15. Slave advertising interval</figcaption>
 </figure>
 <p>Advertising events occur once in a while, and each event lasts for a
@@ -3144,7 +3144,7 @@ consumption is quite low.</p>
 advertised on channel 37, 38, and 39 simultaneously. The process of
 slave advertising event is shown in Figure 7.16.</p>
 <figure align="center">
-    <img src="chapter_7/7.2/../../Pics/D7Z/7-16.png" width="70%">
+    <img src="chapter_7/7.2/../../Pics/D7Z/7-16.jpg" width="70%">
     <figcaption>Figure 7.16. Slave advertising event</figcaption>
 </figure>
 <h2 id="2-master-scanning"><a class="header" href="#2-master-scanning">2. Master scanning</a></h2>
@@ -3156,7 +3156,7 @@ The master may customise its own settings.</p>
 <p>In passive scanning, the scanner only listens to advertising packets
 without sending any data to the advertiser., as shown in Figure 7.17.</p>
 <figure align="center">
-    <img src="chapter_7/7.2/../../Pics/D7Z/7-17.png" width="70%">
+    <img src="chapter_7/7.2/../../Pics/D7Z/7-17.jpg" width="70%">
     <figcaption>Figure 7.17. Passive scanning</figcaption>
 </figure>
 <p>Once the scanning parameters are set, the master may send commands in
@@ -3173,7 +3173,7 @@ packets sent by slaves but also the scan response packets, and
 distinguish the two types. See Figure 7.18 for the process of active
 scanning.</p>
 <figure align="center">
-    <img src="chapter_7/7.2/../../Pics/D7Z/7-18.png" width="70%">
+    <img src="chapter_7/7.2/../../Pics/D7Z/7-18.jpg" width="70%">
     <figcaption>Figure 7.18. Active scanning</figcaption>
 </figure>
 <p>After the controller receives any data, it will report an event to the
@@ -3223,7 +3223,7 @@ master-slave mode. The process is as follows:</p>
 </ol>
 <p>The communication sequence is shown in Figure 7.19.</p>
 <figure align="center">
-    <img src="chapter_7/7.2/../../Pics/D7Z/7-19.png" width="100%">
+    <img src="chapter_7/7.2/../../Pics/D7Z/7-19.jpg" width="100%">
     <figcaption>Figure 7.19. Communication sequence</figcaption>
 </figure>
 </li>
@@ -3283,7 +3283,7 @@ providing device. Then, the IoT device looks for the corresponding
 network and connects with it. Figure 7.21 shows the steps of SoftAP
 network configuration.</p>
 <figure align="center">
-    <img src="chapter_7/7.3/../../Pics/D7Z/7-21.png" width="90%">
+    <img src="chapter_7/7.3/../../Pics/D7Z/7-21.jpg" width="90%">
     <figcaption>Figure 7.21. Steps of SoftAP network configuration</figcaption>
 </figure>
 <p>The SoftAP mechanism connects devices directly to the LAN without
@@ -3299,7 +3299,7 @@ need to do the extra settings manually.</p>
 <p>In-depth introduction to SoftAP will be given later together with Wi-Fi
 programming.</p>
 <figure align="center">
-    <img src="chapter_7/7.3/../../Pics/D7Z/7-22.png" width="90%">
+    <img src="chapter_7/7.3/../../Pics/D7Z/7-22.jpg" width="90%">
     <figcaption>Figure 7.22. Network configuration via SoftAP</figcaption>
 </figure><div style="break-before: page; page-break-before: always;"></div><h1 id="smartconfig"><a class="header" href="#smartconfig">SmartConfig</a></h1>
 <h2 id="introduction-2"><a class="header" href="#introduction-2">Introduction</a></h2>
@@ -3311,7 +3311,7 @@ application on the smartphone for protocol interaction between the two
 parties. The steps of SmartConfig network configuration are shown in
 Figure 7.23.</p>
 <figure align="center">
-    <img src="chapter_7/7.3/../../Pics/D7Z/7-23.png" width="90%">
+    <img src="chapter_7/7.3/../../Pics/D7Z/7-23.jpg" width="90%">
     <figcaption>Figure 7.23. Steps of SmartConfig network configuration</figcaption>
 </figure>
 <p>The frame format of MAC layer in IEEE 802.11 allows for clear
@@ -3321,7 +3321,7 @@ calculate the length of the payload data as soon as the MAC frames are
 received. The payload data here is usually the password. Figure 7.24
 shows the packet structure of SmartConfig network configuration.</p>
 <figure align="center">
-    <img src="chapter_7/7.3/../../Pics/D7Z/7-24.png" width="90%">
+    <img src="chapter_7/7.3/../../Pics/D7Z/7-24.jpg" width="90%">
     <figcaption>Figure 7.24. Packet structure of SmartConfig network configuration</figcaption>
 </figure>
 <p>Table 7.2 explains the fields of the data packet of SmartConfig network
@@ -3396,7 +3396,7 @@ looks for corresponding AP and connects with it. The steps of Bluetooth
 network configuration are shown in Figure 7.25.</p>
 <!-- ![Steps of Bluetooth network configuration](D7Z/7-25){width="80%"} -->
 <figure align="center">
-    <img src="chapter_7/7.3/../../Pics/D7Z/7-25.png" width="90%">
+    <img src="chapter_7/7.3/../../Pics/D7Z/7-25.jpg" width="90%">
     <figcaption>Figure 7.25. Steps of Bluetooth network configuration</figcaption>
 </figure>
 <p>The advantage of Bluetooth network configuration is that it eliminates
@@ -3413,7 +3413,7 @@ network configuration, ESP32-C3 offers a comprehensive solution called
 BluFi. Figure 7.26 indicates how to configure networks via BluFi.</p>
 <!-- ![Network configuration via BluFi](D7Z/7-26){width="70%"} -->
 <figure align="center">
-    <img src="chapter_7/7.3/../../Pics/D7Z/7-26.png" width="70%">
+    <img src="chapter_7/7.3/../../Pics/D7Z/7-26.jpg" width="70%">
     <figcaption>Figure 7.26. Network configuration via BluFi</figcaption>
 </figure>
 <blockquote>
@@ -3435,7 +3435,7 @@ Such devices are typically used in large-scale networks, factory
 testing, or industrial scenarios. The steps of direct network
 configuration are shown in Figure 7.27.</p>
 <figure align="center">
-    <img src="chapter_7/7.3/../../Pics/D7Z/7-27.png" width="90%">
+    <img src="chapter_7/7.3/../../Pics/D7Z/7-27.jpg" width="90%">
     <figcaption>Figure 7.27. Steps of direct network configuration</figcaption>
 </figure>
 <p>This method adopts a software solution and is easy to implement. It is
@@ -3455,7 +3455,7 @@ users. The standard offers two methods, Personal Identification Number
 (PIN) method and Push Button Configuration (PBC) method. Figure 7.28
 shows the steps of RouterConfig.</p>
 <figure align="center">
-    <img src="chapter_7/7.3/../../Pics/D7Z/7-28.png" width="80%">
+    <img src="chapter_7/7.3/../../Pics/D7Z/7-28.jpg" width="80%">
     <figcaption>Figure 7.28. Steps of RouterConfig</figcaption>
 </figure>
 <p>The process is relatively straightforward, but it requires both the
@@ -3482,7 +3482,7 @@ via another custom message. After connecting, the device can perform
 further configuration such as external network binding. The steps of
 ZeroConfig network configuration are shown in Figure 7.29.</p>
 <figure align="center">
-    <img src="chapter_7/7.3/../../Pics/D7Z/7-29.png" width="90%">
+    <img src="chapter_7/7.3/../../Pics/D7Z/7-29.jpg" width="90%">
     <figcaption>Figure 7.29. Steps of ZeroConfig</figcaption>
 </figure>
 <p>Since the networked device stores the SSID and password of the router,
@@ -3499,7 +3499,7 @@ with a unique name and password, connecting the IoT device to the AP and
 sending network binding information. Figure 7.30 shows the steps of
 phone AP network configuration.</p>
 <figure align="center">
-    <img src="chapter_7/7.3/../../Pics/D7Z/7-30.png" width="90%">
+    <img src="chapter_7/7.3/../../Pics/D7Z/7-30.jpg" width="90%">
     <figcaption>Figure 7.30. Steps of phone AP network configuration</figcaption>
 </figure>
 <p>Phone AP network configuration does not require the IoT device to
@@ -3597,14 +3597,14 @@ network. In this mode, the device is able to access both the external
 and internal network directly, using the Internet Protocol (IP) address
 assigned by the AP. Figure 7.32 explains Wi-Fi STA mode.</p>
 <figure align="center">
-    <img src="chapter_7/7.4/../../Pics/D7Z/7-32.png" width="70%">
+    <img src="chapter_7/7.4/../../Pics/D7Z/7-32.jpg" width="70%">
     <figcaption>Figure 7.32. Wi-Fi STA mode</figcaption>
 </figure>
 <h2 id="2-use-esp-idf-components-to-connect-devices-to-routers"><a class="header" href="#2-use-esp-idf-components-to-connect-devices-to-routers">2. Use ESP-IDF components to connect devices to routers.</a></h2>
 <p>Figure 7.33 shows how to use ESP-IDF components to connect devices to
 routers.</p>
 <figure align="center">
-    <img src="chapter_7/7.4/../../Pics/D7Z/7-33.png" width="90%">
+    <img src="chapter_7/7.4/../../Pics/D7Z/7-33.jpg" width="90%">
     <figcaption>Figure 7.33. Using ESP-IDF components to connect devices to
 routers</figcaption>
 </figure>
@@ -3965,7 +3965,7 @@ I (5234) smartconfig_example: Scan done
 <p>Connect your phone to Wi-Fi, and enter the password to start
 configuration. The SmartConfig interface is shown in Figure 7.39.</p>
 <figure align="center">
-    <img src="chapter_7/7.4/../../Pics/D7Z/7-39.png" width="40%">
+    <img src="chapter_7/7.4/../../Pics/D7Z/7-39.jpg" width="40%">
     <figcaption>Figure 7.39. SmartConfig configuration</figcaption>
 </figure>
 <p>The output log is as follows:</p>
@@ -4090,7 +4090,7 @@ shown in Figure 7.40.</p>
 Tap &quot;Connect&quot; to connect with Bluetooth. If connected, you will see the
 interface as Figure 7.41.</p>
 <figure align="center">
-    <img src="chapter_7/7.4/../../Pics/D7Z/7-41.png" width="50%">
+    <img src="chapter_7/7.4/../../Pics/D7Z/7-41.jpg" width="50%">
     <figcaption>Figure 7.41. Bluetooth connected</figcaption>
 </figure>
 <p>The output log is as follows:</p>
@@ -4102,7 +4102,7 @@ interface as Figure 7.41.</p>
 <p>Tap &quot;Provision network&quot; in Figure 7.41 to enter the provisioning
 interface shown in Figure 7.42.</p>
 <figure align="center">
-    <img src="chapter_7/7.4/../../Pics/D7Z/7-42.png" width="50%">
+    <img src="chapter_7/7.4/../../Pics/D7Z/7-42.jpg" width="50%">
     <figcaption>Figure 7.42. Provisioning</figcaption>
 </figure>
 </li>
@@ -4114,7 +4114,7 @@ Details about STA connection in Wi-Fi mode will be displayed at the
 bottom of the screen, including the BSSID and SSID of the AP and the
 connection status.</p>
 <figure align="center">
-    <img src="chapter_7/7.4/../../Pics/D7Z/7-43.png" width="50%">
+    <img src="chapter_7/7.4/../../Pics/D7Z/7-43.jpg" width="50%">
     <figcaption>Figure 7.43. STA connected</figcaption>
 </figure>
 <p>The output log is as follows:</p>
