@@ -30,6 +30,90 @@ cd ~/esp32-c3-book-en
 mdbook serve
 ```
 
+## 📗Content Breakdown
+<!-- 
+| Num | Description| Skills Learned |
+|----------|----------|----------|
+|  1   | Explain the architecture of Internet of Things, and then introduce the most common IoT application | Learn the concept of IoT architecture and smart home.  |
+| 2 | xxx   | xxx   |
+|  3 | xxx   | xxx   |
+| 4 | xxx   | xxx   |
+|  5   | xxx   | xxx   |
+| 6 | xxx   | xxx   | -->
+
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parts</th>
+      <th>Chapters</th>
+      <th>Description</th>
+       <th>Skills learned</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr>
+      <td rowspan="4">Part 1</td>
+      <td>Chapter1</td>
+      <td rowspan="4">Explain basic IoT architecture, stages of smart home development, ESP RainMaker and ESP-IDF SDK overview</td>
+      <td rowspan="4"> 
+      <ul><li>IoT basic concepts</li> <li>Smart homes</li>
+      <li>Environment</li>
+      <li>Cloud solution</li>
+      </td>
+      </tr>
+      <tr><td>Chapter2</td></tr>
+      <tr><td>Chapter3</td></tr>
+      <tr><td>Chapter4</td></tr>
+    <tr>
+      <td rowspan="2">Part2</td>
+       <td>Chapter5</td>
+      <td rowspan="2">Design the minimum hardware system based on ESP32-C3  and application scenarios, understand the peripheral interfaces and driver development</td>
+      <td rowspan="2"><ul><li>smart light hardware design</li><li>driver development</li></td>
+    </tr>
+    <tr><td>Chapter6</td></tr>
+     <tr>
+      <td rowspan="5">Part3</td>
+      <td>Chapter7</td>
+      <td rowspan="5">Use Wi-Fi and Bluetooth for network connectivity and local and cloud control</td>
+      <td rowspan="5"><ul><li>Wi-Fi</li><li>Bluetooth</li> <li>MQTT</li></td>
+     <tr><td>Chapter8</td></tr>
+     <tr><td>Chapter9</td></tr>
+     <tr><td>Chapter10</td></tr>
+     <tr><td>Chapter11</td></tr>
+     <tr>
+      <td rowspan="4">Part 4</td>
+      <td>Chapter12</td>
+      <td rowspan="4">How to use power management and low power optimsation and enchance the device security, mass flashing and testing and remote monitoring platform-ESP Insights. </td>
+      <td rowspan="4"><ul> <li> low power modes</li> <li> security features </li> <li> Firware burning </li> <li> Remote monitoring</li></td>
+      </tr>
+      <tr><td>Chapter13</td></tr>
+      <tr><td>Chapter14</td></tr>
+      <tr><td>Chapter15</td></tr>
+    </tr>
+  </tbody>
+</table>
+
+
+<style>
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+</style>
+
+
+
+
+
+
 ## 🤝 Contribution
 
 Please check [CONTRIBUTING.md](CONTRIBUTING.md) if you'd like to help improve the book. Contributions in the forms of pull requests, bug reports, and feature requests are all welcome!
