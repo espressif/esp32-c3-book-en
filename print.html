@@ -4255,7 +4255,7 @@ between low-speed and low-power devices.</p>
 <p>According to the functional characteristics of ESP32-C3, we will introduce two commonly used local control technologies in this chapter, namely through Wi-Fi or Bluetooth within a LAN.</p>
 <p>The network topology centered on Wi-Fi is shown in Figure 8.1. The command sending devices (smartphone or PC) should be in the same LAN as the controlled device, and send data to the device through Wi-Fi. But for Bluetooth control, there is no need of Wi-Fi routers, as data can be directly transmitted between the smartphone and the controlled device via Bluetooth.</p>
 <figure align="center">
-    <img src="chapter_8/8.1/../../Pics/D8Z/8-1.png" width="70%">
+    <img src="chapter_8/8.1/../../Pics/D8Z/8-1.jpg" width="70%">
     <figcaption>Figure 8.1. Network topology centered on Wi-Fi within a LAN</figcaption>
 </figure>
 <p>Using Bluetooth is simpler than using Wi-Fi as Bluetooth does not require Wi-Fi routers. However, in practice, if the IoT device wants to access cloud platforms, it needs Wi-Fi routers to connect to the Internet and then the cloud platform. Moreover, smartphones are mostly connected to Wi-Fi routers. Therefore, an LAN usually includes Wi-Fi routers, which makes it convenient to use Wi-Fi for local control. If the IoT device does not need access to cloud platforms, Bluetooth can be a good option for local control. You can select one of the methods according to whether your device needs access to cloud platforms.</p>
@@ -4849,7 +4849,7 @@ Lookup esp32c3_smart_light._http._tcp.local
 <div style="break-before: page; page-break-before: always;"></div><h1 id="transmission-control-protocol-tcp"><a class="header" href="#transmission-control-protocol-tcp">Transmission Control Protocol (TCP)</a></h1>
 <p>TCP is one of the major protocols in the Internet protocol family. In the TCP/IP model, TCP serves as the transport layer protocol, providing reliable data transmission for application layer protocols such as HTTP, MQTT, FTP, etc. The TCP/IP model is shown in Figure 8.2.</p>
 <figure align="center">
-    <img src="chapter_8/8.3/../../Pics/D8Z/8-2.png" width="60%">
+    <img src="chapter_8/8.3/../../Pics/D8Z/8-2.jpg" width="60%">
     <figcaption>Figure 8.2. TCP/IP model</figcaption>
 </figure>
 <h3 id="1-introduction-to-tcp"><a class="header" href="#1-introduction-to-tcp">1. Introduction to TCP</a></h3>
@@ -5752,7 +5752,7 @@ encryption. The TLS protocol model is shown in Figure 8.13, where the
 handshake layer includes four sub-protocols: handshake protocol, change
 cipher spec protocol, application data protocol, and alert protocol.</p>
 <figure align="center">
-    <img src="chapter_8/8.4/../../Pics/D8Z/8-13.png" width="70%">
+    <img src="chapter_8/8.4/../../Pics/D8Z/8-13.jpg" width="70%">
     <figcaption>Figure 8.13. TLS protocol model</figcaption>
 </figure>
 <p>Record layer is responsible for all the underlying data exchanged at the
@@ -5763,7 +5763,7 @@ merged), compressed, added with a message authentication code,
 encrypted, and then converted into the data part of the TLS record.
 Figure 8.14 shows the structure of a TLS record packet.</p>
 <figure align="center">
-    <img src="chapter_8/8.4/../../Pics/D8Z/8-14.png" width="70%">
+    <img src="chapter_8/8.4/../../Pics/D8Z/8-14.jpg" width="70%">
     <figcaption>Figure 8.14. TLS record packet</figcaption>
 </figure>
 <p>Handshake layer has four sub-protocols, which are introduced in the list
@@ -5805,7 +5805,7 @@ encryption algorithm, and then use symmetric encrypted data and data
 digest for data communication. Figure 8.15 shows the TLS handshake
 process.</p>
 <figure align="center">
-    <img src="chapter_8/8.4/../../Pics/D8Z/8-15.png" width="60%">
+    <img src="chapter_8/8.4/../../Pics/D8Z/8-15.jpg" width="60%">
     <figcaption>Figure 8.15. TLS handshake process</figcaption>
 </figure>
 <ol>
@@ -6561,7 +6561,7 @@ subscriber serve as the Client, which can both publish and subscribe
 messages. The broker acts as the Server. Figure 9.1 shows the
 architecture of the protocol.</p>
 <figure align="center">
-    <img src="chapter_9/9.2/../../Pics/D9Z/9-1.png" width="70%">
+    <img src="chapter_9/9.2/../../Pics/D9Z/9-1.jpg" width="70%">
     <figcaption>Figure 9.1. Architecture of MQTT protocol</figcaption>
 </figure>
 <ol>
@@ -7235,7 +7235,7 @@ explains some fundamental concepts that will be mentioned in the
 description of the ESP RainMaker framework (backend and frontend). The
 ESP RainMaker framework is illustrated in Figure 9.6.</p>
 <figure align="center">
-    <img src="chapter_9/9.4/../../Pics/D9Z/9-6.png" width="70%">
+    <img src="chapter_9/9.4/../../Pics/D9Z/9-6.jpg" width="70%">
     <figcaption>Figure 9.6. ESP RainMaker framework</figcaption>
 </figure>
 <h2 id="node"><a class="header" href="#node">Node</a></h2>
@@ -9857,7 +9857,7 @@ how to achieve remote OTA for an intelligent lamp using ESP RainMaker.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="firmware-upgrade-1"><a class="header" href="#firmware-upgrade-1">Firmware Upgrade</a></h1>
 <p>The OTA mechanism allows the device to receive new firmware during normal operation, and write the new firmware to the currently inactive application partition. After verifying the validity of the firmware, the device switches to run on the new firmware. The basic steps of OTA are shown in Figure 11.1.</p>
 <figure align="center">
-    <img src="chapter_11/11.1/../../Pics/D11Z/11-1.png" width="90%">
+    <img src="chapter_11/11.1/../../Pics/D11Z/11-1.jpg" width="90%">
     <figcaption>Figure 11.1. Basic steps of OTA</figcaption>
 </figure>
 <p>From Figure 11.1, the basic steps of OTA are as follows:</p>
@@ -10330,7 +10330,7 @@ follows:</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="upgrade-firmware-through-a-local-host"><a class="header" href="#upgrade-firmware-through-a-local-host">Upgrade Firmware Through a Local Host</a></h1>
 <p>In the ESP-IDF example, the procedure of OTA is shown in Figure 11.4.</p>
 <figure align="center">
-    <img src="chapter_11/11.3/../../Pics/D11Z/11-4.png" width="90%">
+    <img src="chapter_11/11.3/../../Pics/D11Z/11-4.jpg" width="90%">
     <figcaption>Figure 11.4. Procedure of over-the-air (OTA)</figcaption>
 </figure>
 <h3 id="1-enabling-ota-server"><a class="header" href="#1-enabling-ota-server">1. Enabling OTA server</a></h3>
@@ -11754,7 +11754,7 @@ attack.</p>
 <p>Figure 13.1 shows the security risks that the device may face when
 exchanging data with the cloud.</p>
 <figure align="center">
-    <img src="chapter_13/13.1/../../Pics/D13Z/13-1.png" width="80%">
+    <img src="chapter_13/13.1/../../Pics/D13Z/13-1.jpg" width="80%">
     <figcaption>Figure 13.1. Security risks when exchanging data with cloud</figcaption>
 </figure>
 <p>As we can see, device data security cannot be guaranteed unless proper
@@ -11771,7 +11771,7 @@ propose requirements for the protection of data integrity,
 confidentiality, and legality. The basic components of data security are
 shown in Figure 13.2.</p>
 <figure align="center">
-    <img src="chapter_13/13.1/../../Pics/D13Z/13-2.png" width="70%">
+    <img src="chapter_13/13.1/../../Pics/D13Z/13-2.jpg" width="70%">
     <figcaption>Figure 13.2. Basic components of data security</figcaption>
 </figure>
 <p>The requirements for data transmission security mainly include the
@@ -11820,7 +11820,7 @@ the uniqueness of the data block, just like a person's fingerprint or ID
 number can uniquely represent this person. The integrity check algorithm
 is shown in Figure 13.3.</p>
 <figure align="center">
-    <img src="chapter_13/13.2/../../Pics/D13Z/13-3.png" width="90%">
+    <img src="chapter_13/13.2/../../Pics/D13Z/13-3.jpg" width="90%">
     <figcaption>Figure 13.3. Integrity verification algorithm</figcaption>
 </figure>
 <p>The integrity verification algorithm has the following properties:</p>
@@ -11850,7 +11850,7 @@ checksum matches the appended checksum, the data is deemed to be
 integral, otherwise the data is deemed to have been tampered with or to
 contain code errors.</p>
 <figure align="center">
-    <img src="chapter_13/13.2/../../Pics/D13Z/13-4.png" width="80%">
+    <img src="chapter_13/13.2/../../Pics/D13Z/13-4.jpg" width="80%">
     <figcaption>Figure 13.4. Basic principle of data integrity verification</figcaption>
 </figure>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="integrity-verification-of-firmware-data"><a class="header" href="#integrity-verification-of-firmware-data">Integrity Verification of Firmware Data</a></h1>
@@ -11860,7 +11860,7 @@ is designed. Figure 13.5 shows that during firmware updates, integrity
 verification is performed before data transmission and updated firmware
 loading.</p>
 <figure align="center">
-    <img src="chapter_13/13.2/../../Pics/D13Z/13-5.png" width="100%">
+    <img src="chapter_13/13.2/../../Pics/D13Z/13-5.jpg" width="100%">
     <figcaption>Figure 13.5. Integrity verification before data transmission and firmware loading</figcaption>
 </figure>
 <p>In the process of OTA upgrades, if HTTPS protocol is used to transmit
@@ -11943,7 +11943,7 @@ one set of data with another. Figure 13.6 uses the simplest single-code
 replacement encryption algorithm. In real applications, encryption
 algorithms are much more complex, but the principle is the same.</p>
 <figure align="center">
-    <img src="chapter_13/13.3/../../Pics/D13Z/13-6.png" width="70%">
+    <img src="chapter_13/13.3/../../Pics/D13Z/13-6.jpg" width="70%">
     <figcaption>Figure 13.6. Basic principle of data encryption</figcaption>
 </figure>
 <p>Data encryption algorithms can generally be divided into two categories:
@@ -11976,7 +11976,7 @@ and after getting the symmetric key, the client and server use the less
 resource-intensive symmetric encryption algorithm to protect the
 confidentiality of transmitted data.</p>
 <figure align="center">
-    <img src="chapter_13/13.3/../../Pics/D13Z/13-7.png" width="80%">
+    <img src="chapter_13/13.3/../../Pics/D13Z/13-7.jpg" width="80%">
     <figcaption>Figure 13.7. Combining asymmetric and symmetric encryption to transmit data</figcaption>
 </figure>
 <p>The commonly-used asymmetric encryption algorithm is RSA algorithm.</p>
@@ -12056,7 +12056,7 @@ the plaintext data of 64 Bytes are divided into four blocks, and the
 encryption keys (key1 ~ key4) are derived from <code>base_key</code>.
 Combining the four encrypted blocks will get the 64 B encrypted data.</p>
 <figure align="center">
-    <img src="chapter_13/13.3/../../Pics/D13Z/13-8.png" width="70%">
+    <img src="chapter_13/13.3/../../Pics/D13Z/13-8.jpg" width="70%">
     <figcaption>Figure 13.8. Basic principle of AES-XTS-128 block encryption</figcaption>
 </figure>
 <p>The benefits of AES-XTS, which first dynamically adjusts the encryption
@@ -12463,7 +12463,7 @@ not be used.</p>
 <p>The basic principle of using digital signature to verify data legitimacy
 is shown in Figure 13.10.</p>
 <figure align="center">
-    <img src="chapter_13/13.4/../../Pics/D13Z/13-10.png" width="80%">
+    <img src="chapter_13/13.4/../../Pics/D13Z/13-10.jpg" width="80%">
     <figcaption>Figure 13.10. Basic principle of using digital signatures to verify data legitimacy</figcaption>
 </figure>
 <p>Through this mechanism of &quot;private key issuing public key, private key
@@ -12536,7 +12536,7 @@ section are applicable to secure boot v2.</p>
 </figure>
 <p>When software secure boot is enabled, during firmware building, the generated app firmware (referred to as origin_app below) contains a public key, which will be used to verify the legitimacy of the new firmware <code>new_app</code> sent via OTA upgrade. As shown in Figure 13.13, during OTA upgrades, after receiving the firmware and calling <code>esp_ota_end()</code> or <code>esp_ota_set_boot_partition()</code>, software secure boot will automatically use the public key in <code>origin_app</code> to verify the digital signature attached to <code>new_app</code>.</p>
 <figure align="center">
-    <img src="chapter_13/13.4/../../Pics/D13Z/13-13.png" width="80%">
+    <img src="chapter_13/13.4/../../Pics/D13Z/13-13.jpg" width="80%">
     <figcaption>Figure 13.13. Software secure boot verifies new app firmware sent via OTA upgrades</figcaption>
 </figure>
 <p>When software secure boot is enabled, the app firmware sent to the
@@ -12570,7 +12570,7 @@ private key. Verification is considered successful as long as at least
 one of the signatures is valid. The data format of the signed app
 firmware of ESP32-C3 is shown in Figure 13.14.</p>
 <figure align="center">
-    <img src="chapter_13/13.4/../../Pics/D13Z/13-14.png" width="90%">
+    <img src="chapter_13/13.4/../../Pics/D13Z/13-14.jpg" width="90%">
     <figcaption>Figure 13.14. Data format of signed app firmware of ESP32-C3</figcaption>
 </figure>
 <p>In the software secure boot scheme, the public key used to verify the
@@ -12705,7 +12705,7 @@ verification fails, the boot process is terminated.</p>
 <p>Figure 13.16 shows the basic flow of signature verification done by
 hardware secure boot.</p>
 <figure align="center">
-    <img src="chapter_13/13.4/../../Pics/D13Z/13-16.png" width="80%">
+    <img src="chapter_13/13.4/../../Pics/D13Z/13-16.jpg" width="80%">
     <figcaption>Figure 13.16. Basic flow of signature verification by hardware secure boot</figcaption>
 </figure>
 <blockquote>

@@ -163,7 +163,7 @@
 </figure>
 <p>When software secure boot is enabled, during firmware building, the generated app firmware (referred to as origin_app below) contains a public key, which will be used to verify the legitimacy of the new firmware <code>new_app</code> sent via OTA upgrade. As shown in Figure 13.13, during OTA upgrades, after receiving the firmware and calling <code>esp_ota_end()</code> or <code>esp_ota_set_boot_partition()</code>, software secure boot will automatically use the public key in <code>origin_app</code> to verify the digital signature attached to <code>new_app</code>.</p>
 <figure align="center">
-    <img src="../../Pics/D13Z/13-13.png" width="80%">
+    <img src="../../Pics/D13Z/13-13.jpg" width="80%">
     <figcaption>Figure 13.13. Software secure boot verifies new app firmware sent via OTA upgrades</figcaption>
 </figure>
 <p>When software secure boot is enabled, the app firmware sent to the
@@ -197,7 +197,7 @@ private key. Verification is considered successful as long as at least
 one of the signatures is valid. The data format of the signed app
 firmware of ESP32-C3 is shown in Figure 13.14.</p>
 <figure align="center">
-    <img src="../../Pics/D13Z/13-14.png" width="90%">
+    <img src="../../Pics/D13Z/13-14.jpg" width="90%">
     <figcaption>Figure 13.14. Data format of signed app firmware of ESP32-C3</figcaption>
 </figure>
 <p>In the software secure boot scheme, the public key used to verify the
