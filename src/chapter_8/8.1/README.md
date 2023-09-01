@@ -23,7 +23,7 @@ According to the functional characteristics of ESP32-C3, we will introduce two c
 The network topology centered on Wi-Fi is shown in Figure 8.1. The command sending devices (smartphone or PC) should be in the same LAN as the controlled device, and send data to the device through Wi-Fi. But for Bluetooth control, there is no need of Wi-Fi routers, as data can be directly transmitted between the smartphone and the controlled device via Bluetooth.
 
 <figure align="center">
-    <img src="../../Pics/D8Z/8-1.png" width="70%">
+    <img src="../../Pics/D8Z/8-1.jpg" width="70%">
     <figcaption>Figure 8.1. Network topology centered on Wi-Fi within a LAN</figcaption>
 </figure>
 

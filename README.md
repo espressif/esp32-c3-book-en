@@ -31,17 +31,6 @@ mdbook serve
 ```
 
 ## 📗Content Breakdown
-<!-- 
-| Num | Description| Skills Learned |
-|----------|----------|----------|
-|  1   | Explain the architecture of Internet of Things, and then introduce the most common IoT application | Learn the concept of IoT architecture and smart home.  |
-| 2 | xxx   | xxx   |
-|  3 | xxx   | xxx   |
-| 4 | xxx   | xxx   |
-|  5   | xxx   | xxx   |
-| 6 | xxx   | xxx   | -->
-
-
 
 <table>
   <thead>
@@ -108,8 +97,6 @@ mdbook serve
     text-align: left;
   }
 </style>
-
-
 
 
 

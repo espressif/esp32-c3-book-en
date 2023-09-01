@@ -3,7 +3,7 @@
 The OTA mechanism allows the device to receive new firmware during normal operation, and write the new firmware to the currently inactive application partition. After verifying the validity of the firmware, the device switches to run on the new firmware. The basic steps of OTA are shown in Figure 11.1.
 
 <figure align="center">
-    <img src="../../Pics/D11Z/11-1.png" width="90%">
+    <img src="../../Pics/D11Z/11-1.jpg" width="90%">
     <figcaption>Figure 11.1. Basic steps of OTA</figcaption>
 </figure>
 
