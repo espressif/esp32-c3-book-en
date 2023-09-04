@@ -14,7 +14,7 @@ telegram content being deciphered.
 The telegram example above presents an application scenario of a common encryption algorithm &ndash; the symmetric encryption. In symmetric encryption, the same algorithm is used for encryption and decryption, and their keys are also the same. Symmetric encryption has the advantages of open algorithm, small computational complexity, fast encryption speed, and high encryption efficiency. However, before data transmission, the sender and receiver must agree on the key, and in order to ensure that the data is not deciphered, both parties must also periodically update the key, which makes key management a burden for both parties. Common symmetric encryption algorithms include AES, DES, and RC4. Figure 8.11 shows the process of symmetric encryption.
 
 <figure align="center">
-    <img src="../../Pics/D8Z/8-11.png" width="90%">
+    <img src="../../Pics/D8Z/8-11.jpg" width="90%">
     <figcaption>Figure 8.11. Process of symmetric encryption</figcaption>
 </figure>
 
@@ -36,7 +36,7 @@ RSA, Diffie-Hellman, DSA, etc.
 The advantage of asymmetric encryption is its security. User A can keep the private key and transmit the public key to user B through the network. Even if user C obtains the public key, user C cannot decipher the data because user C does not have user A's private key. In this way, user A and user B can confidently transmit their respective public keys through the network. Remember, the public key is used for encryption, and the private key is used for decryption. Figure 8.12 shows the process of asymmetric encryption.
 
 <figure align="center">
-    <img src="../../Pics/D8Z/8-12.png" width="90%">
+    <img src="../../Pics/D8Z/8-12.jpg" width="90%">
     <figcaption>Figure 8.12. Process of asymmetric encryption</figcaption>
 </figure>
 
