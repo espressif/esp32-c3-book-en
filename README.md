@@ -52,9 +52,7 @@ mdbook serve
       <td>Chapter1</td>
       <td rowspan="4">Explain basic IoT architecture, stages of smart home development, ESP RainMaker and ESP-IDF SDK overview</td>
       <td rowspan="4"> 
-      <ul><li>IoT basic concepts</li> <li>Smart homes</li>
-      <li>Environment</li>
-      <li>Cloud solution</li>
+      <ul><li>IoT basic concepts</li> <li>Smart homes</li><li>Environment</li><li>Cloud solution</li>
       </td>
       </tr>
       <tr><td>Chapter2</td></tr>
@@ -64,7 +62,7 @@ mdbook serve
       <td rowspan="2">Part2</td>
        <td>Chapter5</td>
       <td rowspan="2">Design the minimum hardware system based on ESP32-C3  and application scenarios, understand the peripheral interfaces and driver development</td>
-      <td rowspan="2"><ul><li>smart light hardware design</li><li>driver development</li></td>
+      <td rowspan="2"><ul><li>Smart light hardware design</li><li>Driver development</li></td>
     </tr>
     <tr><td>Chapter6</td></tr>
      <tr>
@@ -80,7 +78,7 @@ mdbook serve
       <td rowspan="4">Part 4</td>
       <td>Chapter12</td>
       <td rowspan="4">How to use power management and low power optimsation and enchance the device security, mass flashing and testing and remote monitoring platform-ESP Insights. </td>
-      <td rowspan="4"><ul> <li> low power modes</li> <li> security features </li> <li> Firmware burning </li> <li> Remote monitoring</li></td>
+      <td rowspan="4"><ul> <li> Low power modes</li> <li> Security features </li> <li> Firmware burning </li> <li> Remote monitoring</li></td>
       </tr>
       <tr><td>Chapter13</td></tr>
       <tr><td>Chapter14</td></tr>
