@@ -1,4 +1,8 @@
 # ESP32-C3 Wireless Adventure
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)]([https://github.com/espressif/esp32-c3-book-en/pulls])
+[![Learn IoT](https://img.shields.io/badge/learn_IoT-fedcba)]([https://espressif.github.io/esp32-c3-book-en/])
+![ESP BOOK](https://img.shields.io/badge/ESP%20BOOK-e8362d)
+![Multilingual](https://img.shields.io/badge/Multilingual-fc9d03)
 
 ![ESP32-C3](src/Pics/readme-cover.jpg)
 
