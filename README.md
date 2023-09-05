@@ -80,7 +80,7 @@ mdbook serve
       <td rowspan="4">Part 4</td>
       <td>Chapter12</td>
       <td rowspan="4">How to use power management and low power optimsation and enchance the device security, mass flashing and testing and remote monitoring platform-ESP Insights. </td>
-      <td rowspan="4"><ul> <li> low power modes</li> <li> security features </li> <li> Firware burning </li> <li> Remote monitoring</li></td>
+      <td rowspan="4"><ul> <li> low power modes</li> <li> security features </li> <li> Firmware burning </li> <li> Remote monitoring</li></td>
       </tr>
       <tr><td>Chapter13</td></tr>
       <tr><td>Chapter14</td></tr>
