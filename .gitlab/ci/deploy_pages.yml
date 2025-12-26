@@ -1,0 +1,15 @@
+deploy_pages:
+  stage: deploy
+  tags: [deploy]
+  image: rust:latest
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "merge_request_event"'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+  before_script:
+    - apt-get update && apt-get install -y mdbook
+  script:
+    - mdbook build --dest-dir public
+  pages: true
+  artifacts:
+    paths:
+      - public

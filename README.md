@@ -26,7 +26,7 @@ To install the tool:
 cargo install mdbook
 ```
 
-Then you can clone the respository and start a development server by running:
+Then you can clone the repository and start a development server by running:
 
 ```shell
 git clone https://github.com/espressif/esp32-c3-book-en
@@ -51,7 +51,7 @@ mdbook serve
       <td rowspan="4">Part 1</td>
       <td>Chapter1</td>
       <td rowspan="4">Explain basic IoT architecture, stages of smart home development, ESP RainMaker and ESP-IDF SDK overview</td>
-      <td rowspan="4"> 
+      <td rowspan="4">
       <ul><li>IoT basic concepts</li> <li>Smart homes</li><li>Environment</li><li>Cloud solution</li>
       </td>
       </tr>
@@ -77,7 +77,7 @@ mdbook serve
      <tr>
       <td rowspan="4">Part 4</td>
       <td>Chapter12</td>
-      <td rowspan="4">How to use power management and low power optimsation and enchance the device security, mass flashing and testing and remote monitoring platform-ESP Insights. </td>
+      <td rowspan="4">How to use power management and low power optimsation and enhance the device security, mass flashing and testing and remote monitoring platform-ESP Insights. </td>
       <td rowspan="4"><ul> <li> Low power modes</li> <li> Security features </li> <li> Firmware burning </li> <li> Remote monitoring</li></td>
       </tr>
       <tr><td>Chapter13</td></tr>
