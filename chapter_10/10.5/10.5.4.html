@@ -156,7 +156,7 @@
 <h2 id="getting-node-id-in-android"><a class="header" href="#getting-node-id-in-android">Getting Node ID in Android</a></h2>
 <blockquote>
 <p>📝 <strong>Source code</strong></p>
-<p>For the source code of getting node ID in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/ProvisionActivity.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activites/ProvisionActivity.java</code></a>.</p>
+<p>For the source code of getting node ID in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/ProvisionActivity.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/ProvisionActivity.java</code></a>.</p>
 </blockquote>
 <p>To create the request for node ID, use:</p>
 <pre><code class="language-c">EspRmakerUserMapping.CmdSetUserMapping deviceSecretRequest =
@@ -174,7 +174,7 @@ EspRmakerUserMapping.RMakerConfigPayload payload = EspRmakerUserMapping.
 </code></pre>
 <p>To initiate the request, use:</p>
 <pre><code class="language-c">private void associateDevice() {
-    provisionManager.getEspDevice().sendDataToCustomEndPoint(AppConstants.HANDLER_RM_USER_MAPPING, 
+    provisionManager.getEspDevice().sendDataToCustomEndPoint(AppConstants.HANDLER_RM_USER_MAPPING,
                                                     payload.toByteArray(), new ResponseListener() {
         @Override
         public void onSuccess(byte[] returnData) {
@@ -233,7 +233,7 @@ EspRmakerUserMapping.RMakerConfigPayload payload = EspRmakerUserMapping.
                 self.processResponse(responseData: response!)
             }
         } else {
-            delegate?.deviceAssociationFinishedWith(success: false, nodeID: nil, 
+            delegate?.deviceAssociationFinishedWith(success: false, nodeID: nil,
                 error: AssociationError.runtimeError(&quot;Unable to fetch request payload.&quot;))
         }
     } catch {
@@ -250,7 +250,7 @@ EspRmakerUserMapping.RMakerConfigPayload payload = EspRmakerUserMapping.
             //Node ID received. Ready for device provisioning.
             delegate?.deviceAssociationFinishedWith(success: true, nodeID: response.respSetUserMapping.nodeID, error: nil)
         } else {
-            delegate?.deviceAssociationFinishedWith(success: false, nodeID: nil, 
+            delegate?.deviceAssociationFinishedWith(success: false, nodeID: nil,
                 error: AssociationError.runtimeError(&quot;User node mapping failed.&quot;))
         }
     } catch {

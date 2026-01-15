@@ -155,7 +155,7 @@
 <h2 id="connecting-devices-in-android"><a class="header" href="#connecting-devices-in-android">Connecting devices in Android</a></h2>
 <blockquote>
 <p>📝 <strong>Source code</strong></p>
-<p>For the source code of connecting devices in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activites/BLEProvisionLanding.java</code></a>.</p>
+<p>For the source code of connecting devices in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java</code></a>.</p>
 </blockquote>
 <pre><code class="language-c">override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -224,7 +224,7 @@ connection request to the device.</p>
 </code></pre>
 <blockquote>
 <p>📝 <strong>Source code</strong></p>
-<p>For the source code of initiating a connection by the smartphone app, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activites/BLEProvisionLanding.java</code></a>.</p>
+<p>For the source code of initiating a connection by the smartphone app, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java</code></a>.</p>
 </blockquote>
 <h2 id="connecting-devices-in-ios"><a class="header" href="#connecting-devices-in-ios">Connecting devices in iOS</a></h2>
 <p>The iOS app provides a proxy for the connection callback function, so we
@@ -249,7 +249,7 @@ devices in iOS, please refer to <code>book-esp32c3-iot-projects/phone_app/pods/e
             if espBleTransport == nil {
                 espBleTransport = ESPBleTransport(scanTimeout: 0, deviceNamePrefix: &quot;&quot;)
             }
-            espBleTransport.connect(peripheral: peripheral, withOptions: nil, delegate: self) 
+            espBleTransport.connect(peripheral: peripheral, withOptions: nil, delegate: self)
         case .softap:
             ESPLog.log(&quot;Start connecting SoftAp device.&quot; )
             if espSoftApTransport == nil {

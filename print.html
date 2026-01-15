@@ -394,7 +394,7 @@ lights</figcaption>
     <figcaption>Figure 2.4. Steps of developing the Smart Light project</figcaption>
 </figure>
 <h2 id="hardware-design"><a class="header" href="#hardware-design">Hardware design</a></h2>
-<p>Hardware design of IoT devices is essential to an IoT project. A complete smart light project is intended to produce a lamp working under mains supply. Different manufacturers produce lamps of different styles and driver types, but their wireless modules are usually of the same function. To simplify the development process of the Smart Ligh project, this book only covers the hardware design and software development of wireless modules.</p>
+<p>Hardware design of IoT devices is essential to an IoT project. A complete smart light project is intended to produce a lamp working under mains supply. Different manufacturers produce lamps of different styles and driver types, but their wireless modules are usually of the same function. To simplify the development process of the Smart Light project, this book only covers the hardware design and software development of wireless modules.</p>
 <h2 id="iot-cloud-platform-configuration"><a class="header" href="#iot-cloud-platform-configuration">IoT cloud platform configuration</a></h2>
 <p>To use IoT cloud platforms, you need to configure projects on the backend, such as creating products, creating devices, setting device properties, etc.</p>
 <h2 id="embedded-software-development-for-iot-devices"><a class="header" href="#embedded-software-development-for-iot-devices">Embedded software development for IoT devices</a></h2>
@@ -958,7 +958,7 @@ ESP-IDF development environment on Ubuntu 20.04.</p>
 <p>Open a new terminal and execute the following command to install all
 necessary packages. The command will automatically skip packages that
 are already installed.</p>
-<pre><code>$ <b>sudo apt-get install git wget flex bison gperf python3 python3-pip python3- setuptools cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0</b></code></pre>
+<pre><code>$ <b>sudo apt-get install git wget flex bison gperf python3 python3-pip python3-setuptools cmake ninja-build ccache libffi-dev libssl-dev dfu-util libusb-1.0-0</b></code></pre>
 <blockquote>
 <p>💡 <strong>Tip</strong></p>
 <p>You need to use the administrator account and password for the command above. By default, no information will be displayed when entering the password. Simply press the &quot;Enter&quot; key to continue the procedure.</p>
@@ -1398,7 +1398,7 @@ project, which includes the project compilation script
 <code>CMakeLists.txt</code>.</li>
 </ul>
 <p>The common commands of <code>idf.py</code> are as follows:</p>
-<!-- idf.py fullclean: mix target with full clean and missing words, missing explaination about idf.py full clean? -->
+<!-- idf.py fullclean: mix target with full clean and missing words, missing explanation about idf.py full clean? -->
 <ul>
 <li><code>idf.py --help</code>: displaying a list of commands and their usage
 instructions.</li>
@@ -2133,12 +2133,12 @@ It takes similar steps to develop a controller driver: know about the controller
 <p>Simply speaking, sensors refer to devices and components that can convert various physical, chemical, and biological quantities in nature into measurable electrical signals. In this case, different types of sensors are needed. Sensors are the nerve endings of IoT and the core components for human beings to fully perceive nature. It is indispensable to deploy various sensors at a large scale for IoT development. We may use temperature and humidity sensors, inertial sensors, light sensors, air pressure sensors, gesture sensors, etc., depending on application scenarios. They need to be connected through different peripheral interfaces to function and collect data. As for ESP32-C3, I2C, SPI, and ADC are the common peripheral interfaces to drive sensors.</p>
 <p>For your reference, drivers compatible with different types of sensors are provided in the <a href="https://github.com/espressif/esp-iot-solution"><code>espressif/esp-iot-solution</code></a> repository on our GitHub.</p>
 <h3 id="controllers"><a class="header" href="#controllers">Controllers</a></h3>
-<p>Controlling objects is an important function of the perception &amp; control layer. Control systems can be divided into two categories: the <strong>open-loop system</strong> and the <strong>closed-loop system</strong>. An open-loop control system, with no feedback mechanism, uses actuators to directly control objects. Its output signals have no influence or effect on other control actions within the system. But in closed-loop control systems, output is usually measured by sensors and fed back for comparison with the set point. The deviation between the actual output and the expected point is then used to automatically generate the next command. In smart home applications, common controlled objects include lighting, motors, and switches, which are mostly controlled by SoCs' digital and analog signals. The LED PWM, GPIO, and ADC peripheral interfaces of ESP32-C3 can be used to tranmit the above signals.</p>
+<p>Controlling objects is an important function of the perception &amp; control layer. Control systems can be divided into two categories: the <strong>open-loop system</strong> and the <strong>closed-loop system</strong>. An open-loop control system, with no feedback mechanism, uses actuators to directly control objects. Its output signals have no influence or effect on other control actions within the system. But in closed-loop control systems, output is usually measured by sensors and fed back for comparison with the set point. The deviation between the actual output and the expected point is then used to automatically generate the next command. In smart home applications, common controlled objects include lighting, motors, and switches, which are mostly controlled by SoCs' digital and analog signals. The LED PWM, GPIO, and ADC peripheral interfaces of ESP32-C3 can be used to transmit the above signals.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="led-driver-basics"><a class="header" href="#led-driver-basics">LED Driver Basics</a></h1>
 <p>This section will introduce the basic knowledge of LED drivers, including color spaces in lighting, LED driver types, LED dimming methods, and PWM.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="color-spaces"><a class="header" href="#color-spaces">Color Spaces</a></h1>
-<p>Cyan, magenta, and yellow (CMY) are the three primary colors for painting. They mix with each other and generate a set of colors which constitue the CMY color space. We define the amount of magenta as the <em>x</em> axis, yellow as the <em>y</em> axis, and cyan as the <em>z</em> axis, thus creating a 3D space where each color has a unique position.</p>
-<p>CMY is not the only color space. Computer monitors generally use the RGB (red, green, blue) color space, in which the amount of red, green, and blue are assigend as <em>x</em>, <em>y</em>, and <em>z</em> axis. Another color space is HSV, which describes colors in terms of hue (<em>x</em> axis), saturation (or chroma, <em>y</em> axis) and value (or brightness, <em>z</em> axis). The lighting industry commonly uses the HSL color space, which generates colors by changing hue, saturation, and lightness.</p>
+<p>Cyan, magenta, and yellow (CMY) are the three primary colors for painting. They mix with each other and generate a set of colors which constitute the CMY color space. We define the amount of magenta as the <em>x</em> axis, yellow as the <em>y</em> axis, and cyan as the <em>z</em> axis, thus creating a 3D space where each color has a unique position.</p>
+<p>CMY is not the only color space. Computer monitors generally use the RGB (red, green, blue) color space, in which the amount of red, green, and blue are assigned as <em>x</em>, <em>y</em>, and <em>z</em> axis. Another color space is HSV, which describes colors in terms of hue (<em>x</em> axis), saturation (or chroma, <em>y</em> axis) and value (or brightness, <em>z</em> axis). The lighting industry commonly uses the HSL color space, which generates colors by changing hue, saturation, and lightness.</p>
 <h3 id="1-rgb-color-space"><a class="header" href="#1-rgb-color-space">1. RGB color space</a></h3>
 <p>The RGB color space is the one we are most familiar with. As shown in Figure 6.2, this color space is represented by mixing the three primary colors to reproduce almost any color. It is the basic, hardware-oriented color space commonly used in image processing, and is relatively easy to understand. It uses a linear combination of three primary colors to represent a secondary color. The three primary components are highly correlated, so it is not visually intuitive when transitioning colors continuously. To adjust the color of an LED, you need to change the amount of all three primary colors.</p>
 <figure align="center">
@@ -2198,7 +2198,7 @@ color.</p>
 <h3 id="constant-voltage-drivers"><a class="header" href="#constant-voltage-drivers">Constant-voltage drivers</a></h3>
 <p>Constant-voltage drivers provide stable terminal voltage for the LED, and the current changes with the load. When driven by a constant-voltage driver, each LED bead needs a suitable resistor to emit light of the same brightness.</p>
 <h3 id="constant-current-drivers"><a class="header" href="#constant-current-drivers">Constant-current drivers</a></h3>
-<p>Constant-current drivers stablize the current flowing through the LED, and the voltage across the LED changes with the load. When driven by a constant-current driver, the LED can be dimmed by controlling the current flowing through it.</p>
+<p>Constant-current drivers stabilize the current flowing through the LED, and the voltage across the LED changes with the load. When driven by a constant-current driver, the LED can be dimmed by controlling the current flowing through it.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="led-dimming"><a class="header" href="#led-dimming">LED Dimming</a></h1>
 <p>Dimming is a basic feature of smart LED lights including changing the color, brightness, and on/off status. Users can adjust LED lights through a smartphone app, a remote controller, etc. There are three LED dimming methods.</p>
 <h3 id="triac-dimming"><a class="header" href="#triac-dimming">TRIAC dimming</a></h3>
@@ -2610,7 +2610,7 @@ layers turned out to be more popular.</p>
 </li>
 <li>
 <p><strong>Stations (STA)</strong></p>
-<p>Stations comprise all devices and equipments that are
+<p>Stations comprise all devices and equipment that are
 connected to the wireless LAN. Battery-operated laptops and handheld
 computers are typical STAs, but &quot;portable&quot; is not a must. In some cases,
 desktops are also connected to wireless LANs to avoid pulling new
@@ -2680,7 +2680,7 @@ monitoring the beacon frames periodically sent by an AP. It is
 recommended when users need to save power.</p>
 <h3 id="active-scanning"><a class="header" href="#active-scanning">Active scanning</a></h3>
 <p>During active scanning, the STA actively sends out probe requests and
-receives probe responses from the AP. It is further devided into two
+receives probe responses from the AP. It is further divided into two
 modes based on the involvement of SSID.</p>
 <ul>
 <li>
@@ -2996,7 +2996,7 @@ In this way, it is easier to replace and upgrade either module. Although
 there are many chips that put both the Host and the Controller together,
 they still follow this architecture, except that the HCI is changed from
 a hardware communication port to a software one.</p>
-<p>The Bluetooth LE protocol stack includes Physical Layer (PHY), Lin
+<p>The Bluetooth LE protocol stack includes Physical Layer (PHY), Link
 Layer (LL), Logical Link Control and Adaptation Protocol (L2CAP),
 Attribute Protocol (ATT), Security Manager Protocol (SMP), Generic
 Attribute Profile (GATT), and Generic Access Profile (GAP), as shown in
@@ -4121,7 +4121,7 @@ connection status.</p>
 <pre><code class="language-shell">I (63756) BLUFI_EXAMPLE: BLUFI Set WIFI opmode 1
 I (63826) BLUFI_EXAMPLE: Recv STA SSID NETGEAR
 I (63866) BLUFI_EXAMPLE: Recv STA PASSWORD 12345678
-I (63936) BLUFI_EXAMPLE: BLUFI requset wifi connect to AP
+I (63936) BLUFI_EXAMPLE: BLUFI request wifi connect to AP
 I (65746) wifi:new: &lt;8,2&gt;, old: &lt;1,0&gt;, ap: &lt;255,255&gt;, sta: &lt;8,2&gt;, prof:1
 I (66326) wifi:state: init -&gt; auth (b0) 
 I (67326) wifi:state: auth -&gt; init (200) 
@@ -4236,7 +4236,7 @@ smart Wi-Fi configuration with the Smart Light project.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="introduction-to-local-control"><a class="header" href="#introduction-to-local-control">Introduction to Local Control</a></h1>
 <p>This section first introduces what local control is and its usage conditions, scenarios, and advantages. Then it will expound on the device discovery function and data communication protocols involved in local control, and how to choose the data transmission medium for local control. After reading this section, you will have a full understanding of local control of devices.</p>
 <p>As the name suggests, local control refers to operating controlled devices within a certain distance through a series of methods such as hardware switches, touch buttons, infrared remote control, smartphones, and computer networks. It is ubiquitous in our daily life, such as setting air conditioners through infrared remote controls, controlling voice-activated equipment through voice commands, and turning on household lighting through switches or smartphone apps. The concept and technology of local control have become deeply integrated into every aspect of our daily lives.</p>
-<p>You may have noticed that some of the examples listed above are performed through hardware circuit switches or wireless communication technologies such as infrared remote control, while others involve voice recognition, and data communication technologies such as the Internet of Things. In this book, we will focuse on the data communication technology of IoT, and help you build your own local control framework to control the ESP32-C3 smart lights.</p>
+<p>You may have noticed that some of the examples listed above are performed through hardware circuit switches or wireless communication technologies such as infrared remote control, while others involve voice recognition, and data communication technologies such as the Internet of Things. In this book, we will focus on the data communication technology of IoT, and help you build your own local control framework to control the ESP32-C3 smart lights.</p>
 <p>Within the Internet of Things, each device needs to transmit commands through certain data communication method. Some common ways are as follows:</p>
 <ul>
 <li>
@@ -8414,7 +8414,7 @@ automatically download all the dependencies, so please be patient.</p>
 //Network permissions
 &lt;uses-permission android:name=&quot;android.permission.INTERNET&quot; /&gt;
 </code></pre>
-<p>Besides being decalred as static, location permissions should also be requsted in the activity as follows:</p>
+<p>Besides being declared as static, location permissions should also be requested in the activity as follows:</p>
 <pre><code class="language-c">registerForActivityResult(ActivityResultContracts.RequestPermission()) 
 { granted -&gt;
     //Result callback
@@ -8427,7 +8427,7 @@ automatically download all the dependencies, so please be patient.</p>
 </code></pre>
 <p>Add the code above to the activity's <code>onCreate()</code> method, so that the app will request location permissions whenever being launched.</p>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="preparing-for-ios-development"><a class="header" href="#preparing-for-ios-development">Preparing for iOS Development</a></h1>
-<p>The iOS app may be developed on computers runing macOS 10.12 and above
+<p>The iOS app may be developed on computers running macOS 10.12 and above
 using Xcode (available on App Store). It should be target at iOS 11.0
 and above, and can be built with Swift and Objective-C.</p>
 <p>Swift is preferred as it is faster, safer, and more interactive. It
@@ -8667,7 +8667,7 @@ be encapsulated to be reused and modularised.</p>
 tokens in the HTTP header and will receive <code>access_token</code> in the
 response when users log in successfully. Authenticated APIs are marked
 in the <code>Swagger</code> file with a &quot;lock&quot; sign in the front. Their
-<code>access_token</code> needs to be passed for authentification in the
+<code>access_token</code> needs to be passed for authentication in the
 <code>Authorization</code> HTTP header.</p>
 <p>For RainMaker API documentation, please refer to <a href="https://swaggerapis.rainmaker.espressif.com">https://swaggerapis.rainmaker.espressif.com</a>.</p>
 <p>When smartphones communicate with the RainMaker cloud, the underlying
@@ -8709,7 +8709,7 @@ Policy and Terms of Use. Then, it will navigate to a verification
 interface, and a digital code will be sent to the email address. Users
 need to enter the correct digital code to complete the registration
 procedure. The SIGN UP interface is shown in Figure 10.18.</p>
-<p>Figure 10.19 demonstrates the API for account registraion. For detailed
+<p>Figure 10.19 demonstrates the API for account registration. For detailed
 information, please refer to <a href="https://swaggerapis.rainmaker.espressif.com/#/User/usercreation">https://swaggerapis.rainmaker.espressif.com/#/User/usercreation</a>.</p>
 <figure align="center">
     <img src="chapter_10/10.4/../../Pics/D10Z/10-19.jpg" width="90%">
@@ -8925,12 +8925,12 @@ Bluetooth Provisioning.</p>
     <img src="chapter_10/10.5/../../Pics/D10Z/10-24.jpg" width="50%">
     <figcaption>Figure 10.24. Device scanning interface</figcaption>
 </figure>
-<p>In the following sections, we will take Bluetooth provisioning as an example to introduce the process of device provisoning.</p>
+<p>In the following sections, we will take Bluetooth provisioning as an example to introduce the process of device provisioning.</p>
 <h2 id="scanning-devices-in-android"><a class="header" href="#scanning-devices-in-android">Scanning devices in Android</a></h2>
 <p>Users should upgrade their phones to Android 9.0 or higher and enable GPS to search for Bluetooth LE signals. The code is as follows:</p>
 <blockquote>
 <p>📝 <strong>Source code</strong></p>
-<p>For the source code of scanning devices in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activites/BLEProvisionLanding.java</code></a>.</p>
+<p>For the source code of scanning devices in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java</code></a>.</p>
 </blockquote>
 <pre><code class="language-c">private void startScan() {
     //Code Omitted
@@ -8974,7 +8974,7 @@ private BleScanListener bleScanListener = new BleScanListener() {
 <p>📝 <strong>Source code</strong></p>
 <p>For the source code of scanning devices in iOS, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_ios/ESPRainMaker/ESPRainMaker/Interface/Provision/BLE/BLELandingViewController.swift"><code>book-esp32c3-iot-projects/phone_app/app_ios/ESPRainMaker/ESPRainMaker/Interface/Provision/BLE/BLELandingViewController.swift</code></a>.</p>
 </blockquote>
-<pre><code class="language-c">ESPProvisionManager.shared.searchESPDevices(devicePrefix: &quot;prefix&quot;, transport: .ble, 
+<pre><code class="language-c">ESPProvisionManager.shared.searchESPDevices(devicePrefix: &quot;prefix&quot;, transport: .ble,
                         security: Configuration.shared.espProvSetting.securityMode){
     bleDevices, _ in
     //Code Omitted
@@ -8984,7 +8984,7 @@ private BleScanListener bleScanListener = new BleScanListener() {
 <h2 id="connecting-devices-in-android"><a class="header" href="#connecting-devices-in-android">Connecting devices in Android</a></h2>
 <blockquote>
 <p>📝 <strong>Source code</strong></p>
-<p>For the source code of connecting devices in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activites/BLEProvisionLanding.java</code></a>.</p>
+<p>For the source code of connecting devices in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java</code></a>.</p>
 </blockquote>
 <pre><code class="language-c">override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -9053,7 +9053,7 @@ connection request to the device.</p>
 </code></pre>
 <blockquote>
 <p>📝 <strong>Source code</strong></p>
-<p>For the source code of initiating a connection by the smartphone app, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activites/BLEProvisionLanding.java</code></a>.</p>
+<p>For the source code of initiating a connection by the smartphone app, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java</code></a>.</p>
 </blockquote>
 <h2 id="connecting-devices-in-ios"><a class="header" href="#connecting-devices-in-ios">Connecting devices in iOS</a></h2>
 <p>The iOS app provides a proxy for the connection callback function, so we
@@ -9078,7 +9078,7 @@ devices in iOS, please refer to <code>book-esp32c3-iot-projects/phone_app/pods/e
             if espBleTransport == nil {
                 espBleTransport = ESPBleTransport(scanTimeout: 0, deviceNamePrefix: &quot;&quot;)
             }
-            espBleTransport.connect(peripheral: peripheral, withOptions: nil, delegate: self) 
+            espBleTransport.connect(peripheral: peripheral, withOptions: nil, delegate: self)
         case .softap:
             ESPLog.log(&quot;Start connecting SoftAp device.&quot; )
             if espSoftApTransport == nil {
@@ -9100,7 +9100,7 @@ devices in iOS, please refer to <code>book-esp32c3-iot-projects/phone_app/pods/e
 <h2 id="getting-node-id-in-android"><a class="header" href="#getting-node-id-in-android">Getting Node ID in Android</a></h2>
 <blockquote>
 <p>📝 <strong>Source code</strong></p>
-<p>For the source code of getting node ID in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/ProvisionActivity.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activites/ProvisionActivity.java</code></a>.</p>
+<p>For the source code of getting node ID in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/ProvisionActivity.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/ProvisionActivity.java</code></a>.</p>
 </blockquote>
 <p>To create the request for node ID, use:</p>
 <pre><code class="language-c">EspRmakerUserMapping.CmdSetUserMapping deviceSecretRequest =
@@ -9118,7 +9118,7 @@ EspRmakerUserMapping.RMakerConfigPayload payload = EspRmakerUserMapping.
 </code></pre>
 <p>To initiate the request, use:</p>
 <pre><code class="language-c">private void associateDevice() {
-    provisionManager.getEspDevice().sendDataToCustomEndPoint(AppConstants.HANDLER_RM_USER_MAPPING, 
+    provisionManager.getEspDevice().sendDataToCustomEndPoint(AppConstants.HANDLER_RM_USER_MAPPING,
                                                     payload.toByteArray(), new ResponseListener() {
         @Override
         public void onSuccess(byte[] returnData) {
@@ -9177,7 +9177,7 @@ EspRmakerUserMapping.RMakerConfigPayload payload = EspRmakerUserMapping.
                 self.processResponse(responseData: response!)
             }
         } else {
-            delegate?.deviceAssociationFinishedWith(success: false, nodeID: nil, 
+            delegate?.deviceAssociationFinishedWith(success: false, nodeID: nil,
                 error: AssociationError.runtimeError(&quot;Unable to fetch request payload.&quot;))
         }
     } catch {
@@ -9194,7 +9194,7 @@ EspRmakerUserMapping.RMakerConfigPayload payload = EspRmakerUserMapping.
             //Node ID received. Ready for device provisioning.
             delegate?.deviceAssociationFinishedWith(success: true, nodeID: response.respSetUserMapping.nodeID, error: nil)
         } else {
-            delegate?.deviceAssociationFinishedWith(success: false, nodeID: nil, 
+            delegate?.deviceAssociationFinishedWith(success: false, nodeID: nil,
                 error: AssociationError.runtimeError(&quot;User node mapping failed.&quot;))
         }
     } catch {
@@ -9212,7 +9212,7 @@ EspRmakerUserMapping.RMakerConfigPayload payload = EspRmakerUserMapping.
 <h2 id="provisioning-devices-in-android"><a class="header" href="#provisioning-devices-in-android">Provisioning devices in Android</a></h2>
 <blockquote>
 <p>📝 <strong>Source code</strong></p>
-<p>For the source code of provisioning in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/ProvisionActivity.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activites/ProvisionActivity.java</code></a>.</p>
+<p>For the source code of provisioning in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/ProvisionActivity.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/ProvisionActivity.java</code></a>.</p>
 </blockquote>
 <pre><code class="language-c">private void provision() {
 
@@ -9457,7 +9457,7 @@ to its control interface, which displays different information according
 to device types.</p>
 <p>This section takes the control interface of light bulbs as an example,
 which contains the bulb's name, power on/off status, brightness, hue,
-and saturation. This information was obtained eariler when getting the
+and saturation. This information was obtained earlier when getting the
 list of bound devices in Section 10.6.2. The control interface for light
 bulbs is shown in Figure 10.29.</p>
 <figure align="center">
@@ -9637,9 +9637,9 @@ below for the code.</p>
 <h2 id="implementing-scheduling-in-android"><a class="header" href="#implementing-scheduling-in-android">Implementing scheduling in Android</a></h2>
 <blockquote>
 <p>📝 <strong>Source code</strong></p>
-<p>For the source code of implementing scheduling in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/AddScheduleActivity.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activites/AddScheduleActivity.java</code></a>.</p>
+<p>For the source code of implementing scheduling in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/AddScheduleActivity.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/AddScheduleActivity.java</code></a>.</p>
 </blockquote>
-<p>The code to save schedule data is as follows, where <code>KEY_OPERATION decribes</code> the schedule event, <code>KEY_ID</code> is the unique identifier, <code>KEY_NAME</code> refers to the schedule's name, <code>KEY_DAYS</code> to the scheduled date, <code>KEY_MINUTES</code> to the scheduled time, and <code>KEY_TRIGGERS</code> to the recurring pattern (Monday to Friday).</p>
+<p>The code to save schedule data is as follows, where <code>KEY_OPERATION describes</code> the schedule event, <code>KEY_ID</code> is the unique identifier, <code>KEY_NAME</code> refers to the schedule's name, <code>KEY_DAYS</code> to the scheduled date, <code>KEY_MINUTES</code> to the scheduled time, and <code>KEY_TRIGGERS</code> to the recurring pattern (Monday to Friday).</p>
 <pre><code class="language-c">private void saveSchedule() {
     JsonObject scheduleJson = new JsonObject();
     scheduleJson.addProperty(AppConstants.KEY_OPERATION, &quot;&quot;);
@@ -9676,7 +9676,7 @@ Public void updateSchedules(final HashMap&lt;String, JsonObject&gt; map,
 <p>📝 <strong>Source code</strong></p>
 <p>For the source code of implementing scheduling in iOS, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/cf25c67fbcedc44394fd7f90637b745d659f80ff/phone_app/app_ios/ESPRainMaker/ESPRainMaker/Storage/ESPLocalStorageSchedules.swift"><code>book-esp32c3-iot-projects/phone_app/app_ios/ESPRainMaker/ESPRainMaker/Storage/ESPLocalStorageSchedules.swift</code></a>.</p>
 </blockquote>
-<p>The code to save schedule data is as follows, where <code>KEY_OPERATION</code> decribes the schedule event, <code>KEY_ID</code> is the unique identifier, <code>KEY_NAME</code> refers to the schedule's name, <code>KEY_DAYS</code> to the scheduled date, <code>KEY_MINUTES</code> to the scheduled time, and <code>KEY_TRIGGERS</code> to the recurring pattern (Monday to Friday).</p>
+<p>The code to save schedule data is as follows, where <code>KEY_OPERATION</code> describes the schedule event, <code>KEY_ID</code> is the unique identifier, <code>KEY_NAME</code> refers to the schedule's name, <code>KEY_DAYS</code> to the scheduled date, <code>KEY_MINUTES</code> to the scheduled time, and <code>KEY_TRIGGERS</code> to the recurring pattern (Monday to Friday).</p>
 <pre><code class="language-c">func saveSchedules(schedules: [String: ESPSchedule]) {
     do {
         let encoded = try JSONEncoder().encode(schedules)
@@ -9800,7 +9800,7 @@ also provides some other APIs. Let's have a quick look at them.</p>
     <img src="chapter_10/10.7/../../Pics/D10Z/10-35.jpg" width="90%">
     <figcaption>Figure 10.35. API for sharing devices with other users</figcaption>
 </figure>
-<h2 id="gettting-the-onlineoffline-status-of-the-device"><a class="header" href="#gettting-the-onlineoffline-status-of-the-device">Gettting the online/offline status of the device</a></h2>
+<h2 id="getting-the-onlineoffline-status-of-the-device"><a class="header" href="#getting-the-onlineoffline-status-of-the-device">Getting the online/offline status of the device</a></h2>
 <p>The API to get the online/offline status of the device is shown in Figure 10.36 and can be found at <a href="https://swaggerapis.rainmaker.espressif.com/#/User%20Node%20Association/getNodeStatus">https://swaggerapis.rainmaker.espressif.com/#/User%20Node%20Association/getNodeStatus</a>.</p>
 <figure align="center">
     <img src="chapter_10/10.7/../../Pics/D10Z/10-36.jpg" width="90%">
@@ -10530,7 +10530,7 @@ static esp_err_t validate_image_header(esp_rmaker_ota_handle_t ota_handle, esp_a
         return ESP_ERR_INVALID_ARG;
     }
 
-    //Firmware status aquisition
+    //Firmware status acquisition
     const esp_partition_t *running = esp_ota_get_running_partition();
     esp_app_desc_t running_app_info;
     if (esp_ota_get_partition_description(running, &amp;running_app_info) == ESP_OK) {
@@ -10594,12 +10594,12 @@ prevent any accidental pushing of other products' firmware.</p>
         return ESP_FAIL;
     }
     ......
-    //Aquire firmware information for verification
+    //Acquire firmware information for verification
     esp_app_desc_t app_desc;
     err = esp_https_ota_get_img_desc(https_ota_handle, &amp;app_desc);
     if (err ! = ESP_OK) {
         ESP_LOGE(TAG, &quot;esp_https_ota_read_img_desc failed&quot;);
-        esp_rmaker_ota_report_status(ota_handle, OTA_STATUS_FAILED, &quot;Failed to read image decription&quot;);
+        esp_rmaker_ota_report_status(ota_handle, OTA_STATUS_FAILED, &quot;Failed to read image description&quot;);
         goto ota_end;
     }
     err = validate_image_header(ota_handle, &amp;app_desc);
@@ -10628,7 +10628,7 @@ prevent any accidental pushing of other products' firmware.</p>
         esp_rmaker_ota_report_status(ota_handle, OTA_STATUS_SUCCESS, &quot;OTA Upgrade finished successfully&quot;);
         esp_rmaker_reboot(OTA_REBOOT_TIMER_SEC);
         return ESP_OK;
-    } 
+    }
     ......
 }
 </code></pre>
@@ -13297,7 +13297,7 @@ the device operation status remotely and obtain the details of
 abnormal events in a timely manner, saving the time on handling
 problems greatly and accelerating the software development and
 release process. ESP Insights also saves the records of abnormal
-events occured before the device firmware crashes. After the device
+events occurred before the device firmware crashes. After the device
 is rebooted, it uploads the data to the cloud, thus avoiding losing
 abnormal information.</p>
 </li>
@@ -13614,7 +13614,7 @@ saves the memory. <code>APP_INSIGHTS_LOG_TYPE</code> defines the log type that
 needs to be reported. The current example supports reporting error and
 warning logs and events. By default, the Insights agent supports
 uploading device crash logs, so users do not need to configure this type
-of logs delibrately. Users can enable the following options in the
+of logs deliberately. Users can enable the following options in the
 default configuration to record the memory overhead, Wi-Fi signal, and
 network variables of the device.</p>
 <pre><code class="language-c">CONFIG_DIAG_ENABLE_METRICS=y

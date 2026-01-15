@@ -157,12 +157,12 @@
     <img src="../../Pics/D10Z/10-24.jpg" width="50%">
     <figcaption>Figure 10.24. Device scanning interface</figcaption>
 </figure>
-<p>In the following sections, we will take Bluetooth provisioning as an example to introduce the process of device provisoning.</p>
+<p>In the following sections, we will take Bluetooth provisioning as an example to introduce the process of device provisioning.</p>
 <h2 id="scanning-devices-in-android"><a class="header" href="#scanning-devices-in-android">Scanning devices in Android</a></h2>
 <p>Users should upgrade their phones to Android 9.0 or higher and enable GPS to search for Bluetooth LE signals. The code is as follows:</p>
 <blockquote>
 <p>📝 <strong>Source code</strong></p>
-<p>For the source code of scanning devices in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activites/BLEProvisionLanding.java</code></a>.</p>
+<p>For the source code of scanning devices in Android, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java"><code>book-esp32c3-iot-projects/phone_app/app_android/app/src/main/java/com/espressif/ui/activities/BLEProvisionLanding.java</code></a>.</p>
 </blockquote>
 <pre><code class="language-c">private void startScan() {
     //Code Omitted
@@ -206,7 +206,7 @@ private BleScanListener bleScanListener = new BleScanListener() {
 <p>📝 <strong>Source code</strong></p>
 <p>For the source code of scanning devices in iOS, please refer to <a href="https://github.com/espressif/book-esp32c3-iot-projects/blob/main/phone_app/app_ios/ESPRainMaker/ESPRainMaker/Interface/Provision/BLE/BLELandingViewController.swift"><code>book-esp32c3-iot-projects/phone_app/app_ios/ESPRainMaker/ESPRainMaker/Interface/Provision/BLE/BLELandingViewController.swift</code></a>.</p>
 </blockquote>
-<pre><code class="language-c">ESPProvisionManager.shared.searchESPDevices(devicePrefix: &quot;prefix&quot;, transport: .ble, 
+<pre><code class="language-c">ESPProvisionManager.shared.searchESPDevices(devicePrefix: &quot;prefix&quot;, transport: .ble,
                         security: Configuration.shared.espProvSetting.securityMode){
     bleDevices, _ in
     //Code Omitted
