@@ -10,7 +10,6 @@
 
 ## 📣 Support
 - Read the [book](https://espressif.github.io/esp32-c3-book-en/).
-- The [pdf version](https://www.espressif.com/sites/default/files/documentation/ESP32-C3%20Wireless%20Adventure.pdf).
 - Download the source code [GitHub repository](https://github.com/espressif/book-esp32c3-iot-projects).
 - Share your thoughts and questions on Espressif’s [official forum](https://www.esp32.com/bookc3).
 
