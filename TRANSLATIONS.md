@@ -4,11 +4,11 @@ We welcome translations for the sections in this book!
 
 ## Guidelines
 
-There are folders in each chapter folder which contain the translated markdown files. Create folders for your language if there are no existing ones. We look forward to translations of vaious languages. 🤩 
+There are folders in each chapter folder which contain the translated markdown files. Create folders for your language if there are no existing ones. We look forward to translations of various languages. 🤩 
 
 > **Note**
 >
-> Please do not translate anything in the code blocks. Translations of pictures are appeciated. Check [pic-translation.xlsx](src/Pics/pic-translation.xlsx) to see the fiugre translations required.
+> Please do not translate anything in the code blocks. Translations of pictures are appreciated. Check [pic-translation.xlsx](src/Pics/pic-translation.xlsx) to see the fiugre translations required.
 
 Translated files should follow this naming convention:
 

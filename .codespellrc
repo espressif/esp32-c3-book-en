@@ -1,0 +1,4 @@
+[codespell]
+skip = build,*.drawio,*.svg,*.pdf,*.html,*.js,*.json,*.de.md
+ignore-words-list = laf,OT,Widgits
+write-changes = true

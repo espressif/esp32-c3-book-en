@@ -2,7 +2,6 @@
 title        = "ESP32-C3 Wireless Adventure: A Comprehensive Guide to IoT"
 authors      = ["Espressif Systems"]
 description  = "A comprehensive guide to IoT"
-multilingual = false
 language     = "en"
 src = "src"
 
